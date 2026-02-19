@@ -1,0 +1,28 @@
+.bg-lightgray {
+    background-color: lightgray;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#formContainer {
+    display: none;
+}
+
+.color-box {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.colored {
+    background-color: #d1ecf1;
+}
+
+label.error {
+    color: red;
+    font-size: 14px;
+}
