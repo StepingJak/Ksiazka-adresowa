@@ -1,1 +1,1 @@
-# Ksiazka-adresowa
+Użyte funkcje w projekcie:
