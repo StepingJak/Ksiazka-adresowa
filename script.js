@@ -64,9 +64,8 @@ $(document).ready(function () {
             email: "Podaj poprawny email",
             telefon: "Podaj numer telefonu"
         },
-        submitHandler: function (form, event) {
+        submitHandler: function (form) {
 
-            event.preventDefault();
 
             var imie = $("input[name='imie']").val();
             var nazwisko = $("input[name='nazwisko']").val();
@@ -121,3 +120,4 @@ $(document).ready(function () {
     
 
 });
+
