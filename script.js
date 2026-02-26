@@ -1,7 +1,20 @@
 $(document).ready(function () {
     
     var table = $('#tabela').DataTable({
-        pageLength: 5
+        pageLength: 5,
+        dom: 'lfrtip',
+        buttons: [
+            {
+                extend: 'csvHtml5',
+                title: 'Kontakty',
+                exportOptions: { columns: [0,1,2,3,4] }
+            },
+            {
+                extend: 'pdfHtml5',
+                title: 'Kontakty',
+                exportOptions: { columns: [0,1,2,3,4] }
+            }
+        ]
     });
 
     $('#btnToggleForm').click(function () {
@@ -28,6 +41,14 @@ $(document).ready(function () {
 
     $('#tabela tbody').on('click', '.delete', function () {
         table.row($(this).parents('tr')).remove().draw();
+    });
+
+    $('#exportCSV').click(function () {
+        table.button('.buttons-csv').trigger();
+    });
+    
+    $('#exportPDF').click(function () {
+        table.button('.buttons-pdf').trigger();
     });
 
     $('#contactForm').validate({

@@ -22,7 +22,7 @@
     background-color: #d1ecf1;
 }
 
-label.error {
-    color: red;
+.error {
+    color: red !important;
     font-size: 14px;
 }
